@@ -65,7 +65,7 @@ public class SakilaAppApplication {
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
 		for(int i = 0; i<titles.size(); i++){
 			driver.findElement(By.tagName("input")).sendKeys(titles.get(i));
-			driver.findElement(By.xpath("//img[@alt='Comic']")).click();
+			driver.findElement(By.xpath("//img[@alt='Realistic']")).click();
 			driver.findElement(By.xpath("//button[text()='Create']")).click();
 			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5000));
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='ArtCard__CardImage-sc-67t09v-2 dOXnUm']")));
