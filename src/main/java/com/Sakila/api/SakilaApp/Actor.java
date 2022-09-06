@@ -9,7 +9,7 @@ public class Actor {
     @Id
     @Column(name = "actor_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int actorid;
+    Integer actorid;
     @Column(name = "first_name")
     String first_name;
     @Column(name = "last_name")
